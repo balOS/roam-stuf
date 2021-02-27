@@ -1,0 +1,33 @@
+  let referencesWriting = window.roamAlphaAPI.q(`[
+    :find ?text
+    :in $ ?title
+    :where
+    [?page :node/title ?title]
+    [?e :block/refs ?page]
+    [?e :block/string ?text]
+  ]`, 'writing');
+
+	randomWriting = referencesWriting[Math.floor(Math.random() * referencesWriting.length)]
+    
+let referencesIdeas = window.roamAlphaAPI.q(`[
+    :find ?text
+    :in $ ?title
+    :where
+    [?page :node/title ?title]
+    [?e :block/refs ?page]
+    [?e :block/string ?text]
+  ]`, 'My Best Ideas');
+
+	randomIdea = referencesIdeas[Math.floor(Math.random() * referencesIdeas.length)]
+	var evergreenPrompt = prompt(randomWriting + "\n" + randomIdea + "\n" + "Match up: What does this idea + an old writing topic make you think?")
+
+if (evergreenPrompt != null) {
+          window
+          .roamAlphaAPI
+          .createBlock(
+          {"location": 
+            {"parent-uid": "02-09-2021", 
+            "order": 0}, 
+          "block": 
+                {"string": "[[prompt me]] - " + evergreenPrompt + "\n" + randomWriting + "\n" + randomIdea}});
+}
