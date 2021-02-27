@@ -4,7 +4,7 @@
 // this is a working model similar to some of roamhacker's SmartBlocks. 
 // 
 
-
+// find first page reference. insert page title in quotes.
 let referencesWriting = window.roamAlphaAPI.q(`[
     :find ?text
     :in $ ?title
@@ -14,8 +14,10 @@ let referencesWriting = window.roamAlphaAPI.q(`[
     [?e :block/string ?text]
   ]`, 'writing');
 
+// randomize result from page
 	randomWriting = referencesWriting[Math.floor(Math.random() * referencesWriting.length)]
-    
+  
+// find second page reference. insert page title in quotes.
 let referencesIdeas = window.roamAlphaAPI.q(`[
     :find ?text
     :in $ ?title
@@ -25,9 +27,13 @@ let referencesIdeas = window.roamAlphaAPI.q(`[
     [?e :block/string ?text]
   ]`, 'My Best Ideas');
 
+// randomize result from page
 	randomIdea = referencesIdeas[Math.floor(Math.random() * referencesIdeas.length)]
+	
+// generate prompt on page when run
 	var evergreenPrompt = prompt(randomWriting + "\n" + randomIdea + "\n" + "Match up: What does this idea + an old writing topic make you think?")
 
+// store response with tags in a date page. edit if you have a target UID to store.
 if (evergreenPrompt != null) {
           window
           .roamAlphaAPI
