@@ -19,9 +19,8 @@ how to use
 - copy the roam/JS snippet and paste into an indented block
 - within the code block, change the tags in question [[My Best Ideas]] and [[writing]] to fit two tags you are interested in comparing. 
 - hit play
-- write
-- review your saved text on the [[prompt me]] page. probably more fun if you add your own [[evergreen]] tag to auto compile. 
-- have fun
+- review your saved text on the [[prompt me]] page. add your own [[evergreen]] tag to auto compile. 
 
+have fun.
 
 -BL 2.27.21
