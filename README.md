@@ -9,10 +9,10 @@ first up - **prompt me**
 - randomly generate blocks from 2 tags + prompt to write a new note
 
 why? 
-i write a billion notes + need to resurface thoughts that would get lost otherwise. [[misfits]]
-i need to practice concision + clarity.
-the act of combination helps create [[evergreen]] notes. a simple generative brain hack.
-i never publish content even though i create tons. [[find your people]]
+- i write a billion notes + need to resurface thoughts that would get lost otherwise. [[misfits]]
+- i need to practice concision + clarity.
+- the act of combination helps create [[evergreen]] notes. a simple generative brain hack.
+- i never publish content even though i create tons. [[find your people]]
 
 how to use:
 - create a new block with {{[[roam/js]]}} 
