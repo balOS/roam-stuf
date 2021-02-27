@@ -14,7 +14,7 @@ i need to practice concision + clarity.
 the act of combination helps create [[evergreen]] notes. a simple generative brain hack.
 i never publish content even though i create tons. [[find your people]]
 
-how to use
+how to use:
 - create a new block with {{[[roam/js]]}} 
 - copy the roam/JS snippet and paste into an indented block
 - within the code block, change the tags in question [[My Best Ideas]] and [[writing]] to fit two tags you are interested in comparing. 
