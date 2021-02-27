@@ -1,4 +1,11 @@
-  let referencesWriting = window.roamAlphaAPI.q(`[
+// promptMe - a roam/JS prompt to generate evergreen notes from different important tags in your graph.
+//2.7.21
+// code snippets + insights here from many, including David Bieber, https://github.com/jacrify/, and a countless number of others.
+// this is a working model similar to some of roamhacker's SmartBlocks. 
+// 
+
+
+let referencesWriting = window.roamAlphaAPI.q(`[
     :find ?text
     :in $ ?title
     :where
